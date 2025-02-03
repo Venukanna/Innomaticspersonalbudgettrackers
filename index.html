@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-coins"></i> BudgetFlow Pro</h1>
+            <nav>
+                <a href="#"><i class="fas fa-plus-circle"></i> Add Transaction</a>
+                <a href="#"><i class="fas fa-chart-pie"></i> Analytics</a>
+                <a href="#"><i class="fas fa-history"></i> History</a>
+            </nav>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Income</h3>
+                <div class="stat-value">$4,500</div>
+                <p>+12% from last month</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Expenses</h3>
+                <div class="stat-value">$2,300</div>
+                <p>-5% from last month</p>
+            </div>
+            <div class="stat-card">
+                <h3>Current Balance</h3>
+                <div class="stat-value">$2,200</div>
+                <p>Available Funds</p>
+            </div>
+        </div>
+
+        <section>
+            <h2><i class="fas fa-plus-circle"></i> New Transaction</h2>
+            <form>
+                <div class="input-group">
+                    <input type="number" placeholder="Amount" required>
+                </div>
+                <div class="input-group">
+                    <select>
+                        <option>Select Category</option>
+                        <option>Food & Dining</option>
+                        <option>Transportation</option>
+                        <option>Entertainment</option>
+                        <option>Salary</option>
+                        <option>Investments</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Description">
+                </div>
+                <div class="input-group">
+                    <input type="date" required>
+                </div>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="type" checked>
+                        <i class="fas fa-arrow-up income-icon"></i> Income
+                    </label>
+                    <label>
+                        <input type="radio" name="type">
+                        <i class="fas fa-arrow-down expense-icon"></i> Expense
+                    </label>
+                </div>
+                <button type="submit"><i class="fas fa-check"></i> Add Transaction</button>
+            </form>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-history"></i> Transaction History</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-12-01</td>
+                            <td>Salary</td>
+                            <td>Monthly Salary</td>
+                            <td>+$4,500</td>
+                            <td><span class="income-badge">Income</span></td>
+                            <td class="action-buttons">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023-12-01</td>
+                            <td>Salary</td>
+                            <td>Monthly Salary</td>
+                            <td>+$4,500</td>
+                            <td><span class="income-badge">Income</span></td>
+                            <td class="action-buttons">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2023-12-01</td>
+                            <td>Salary</td>
+                            <td>Monthly Salary</td>
+                            <td>+$4,500</td>
+                            <td><span class="income-badge">Income</span></td>
+                            <td class="action-buttons">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2023 BudgetFlow Pro. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Add any necessary JavaScript functionality here
+    </script>
+</body>
+</html>
